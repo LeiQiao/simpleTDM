@@ -24,4 +24,4 @@ When you get into TDM, your keyboard will reconnect to the host computer automat
 thanks [virtualKVM] https://github.com/duanefields/VirtualKVM
 
 ps:
-I only have an iMac early 2014, wich is only support Thunderbolt to Thunderbolt, and feel free to send me bugs.
+I only have an iMac early 2014, wich is only support Thunderbolt to Thunderbolt, and feel free to report bugs.
