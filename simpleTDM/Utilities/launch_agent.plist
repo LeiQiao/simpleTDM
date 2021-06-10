@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>KeepAlive</key>
+	<dict>
+		<key>SuccessfulExit</key>
+		<false/>
+	</dict>
+	<key>Label</key>
+	<string>com.LoveC.simpleTDM</string>
+	<key>LimitLoadToSessionType</key>
+	<string>LoginWindow</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>{{program_path}}</string>
+		<string>--silence</string>
+		<string>--port</string>
+		<string>{{port}}</string>
+	</array>
+</dict>
+</plist>

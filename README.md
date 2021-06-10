@@ -25,3 +25,7 @@ thanks [virtualKVM] https://github.com/duanefields/VirtualKVM
 
 ps:
 I only have an iMac early 2014, wich is only support Thunderbolt to Thunderbolt, and feel free to report bugs.
+
+# ==!!! importent !!!==
+
+you can **NOT** use a virtual keyboard or PC keyboard to enter TDM, you **MUST** have mac magic keyboard to use it. this app can easy to transport your magic keyboard between iMac and Macbook.

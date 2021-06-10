@@ -1,0 +1,20 @@
+PODS:
+  - CocoaAsyncSocket (7.6.3)
+  - SwiftyBeaver (1.6.1)
+
+DEPENDENCIES:
+  - CocoaAsyncSocket
+  - SwiftyBeaver
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - CocoaAsyncSocket
+    - SwiftyBeaver
+
+SPEC CHECKSUMS:
+  CocoaAsyncSocket: eafaa68a7e0ec99ead0a7b35015e0bf25d2c8987
+  SwiftyBeaver: ccfcdf85a04d429f1633f668650b0ce8020bda3a
+
+PODFILE CHECKSUM: f1aa6d18b4796eccb26d384d85a5ef20765b03ac
+
+COCOAPODS: 1.5.3

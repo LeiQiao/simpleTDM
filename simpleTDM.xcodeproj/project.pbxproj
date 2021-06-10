@@ -1,0 +1,753 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4371C71E8BE36692C930007D /* Pods_LaunchHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B70F4791640F1C283157B38 /* Pods_LaunchHelper.framework */; };
+		452DC66121AD4B31003C7592 /* LogWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 452DC66021AD4B31003C7592 /* LogWindow.xib */; };
+		452DC66321AD4B71003C7592 /* LogWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452DC66221AD4B71003C7592 /* LogWindow.swift */; };
+		452DC67821AE9427003C7592 /* SleepCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452DC67721AE9427003C7592 /* SleepCommand.swift */; };
+		452DC67A21AE9559003C7592 /* WakeCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452DC67921AE9559003C7592 /* WakeCommand.swift */; };
+		45999C2F21ABDA560084DD10 /* SettingWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45999C2E21ABDA560084DD10 /* SettingWindow.xib */; };
+		45999C3121ABDD8F0084DD10 /* SettingWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45999C3021ABDD8F0084DD10 /* SettingWindow.swift */; };
+		45999C3321ABEC930084DD10 /* launch_agent.plist in Resources */ = {isa = PBXBuildFile; fileRef = 45999C3221ABEC930084DD10 /* launch_agent.plist */; };
+		45999C3621ABF6FB0084DD10 /* install_launch_agent.sh in Resources */ = {isa = PBXBuildFile; fileRef = 45999C3421ABF4470084DD10 /* install_launch_agent.sh */; };
+		45999C3721ABF6FB0084DD10 /* uninstall_launch_agent.sh in Resources */ = {isa = PBXBuildFile; fileRef = 45999C3521ABF48D0084DD10 /* uninstall_launch_agent.sh */; };
+		45999C3F21ABFC050084DD10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45999C3E21ABFC050084DD10 /* AppDelegate.swift */; };
+		45999C4121ABFC070084DD10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45999C4021ABFC070084DD10 /* Assets.xcassets */; };
+		45999C4421ABFC070084DD10 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45999C4221ABFC070084DD10 /* MainMenu.xib */; };
+		45999C4B21ABFC6B0084DD10 /* LaunchHelper.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = 45999C3C21ABFC050084DD10 /* LaunchHelper.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		45999C4D21ACD1350084DD10 /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45999C4C21ACD1350084DD10 /* ServiceManagement.framework */; };
+		45999C5521ACEF050084DD10 /* TDMController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45999C5421ACEF050084DD10 /* TDMController.swift */; };
+		45BE42A421A4F5B50069E7F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BE42A321A4F5B50069E7F6 /* AppDelegate.swift */; };
+		45BE42A621A4F5B60069E7F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45BE42A521A4F5B60069E7F6 /* Assets.xcassets */; };
+		45BE42A921A4F5B60069E7F6 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45BE42A721A4F5B60069E7F6 /* MainMenu.xib */; };
+		45BE42BA21A4F6AA0069E7F6 /* Communication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BE42B221A4F6AA0069E7F6 /* Communication.swift */; };
+		45BE42BB21A4F6AA0069E7F6 /* TDMUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BE42B421A4F6AA0069E7F6 /* TDMUtilities.swift */; };
+		45BE42BC21A4F6AA0069E7F6 /* ThunderboltUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BE42B521A4F6AA0069E7F6 /* ThunderboltUtilities.swift */; };
+		45BE42BD21A4F6AA0069E7F6 /* BlueKeyboardUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BE42B721A4F6AA0069E7F6 /* BlueKeyboardUtilities.swift */; };
+		45BE42BE21A4F6AA0069E7F6 /* NetworkUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BE42B821A4F6AA0069E7F6 /* NetworkUtilities.swift */; };
+		45BE42BF21A4F6AA0069E7F6 /* cocoa_monitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 45BE42B921A4F6AA0069E7F6 /* cocoa_monitor.m */; };
+		45BE42C221A4FEE30069E7F6 /* PreferenceUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BE42C121A4FEE30069E7F6 /* PreferenceUtilities.swift */; };
+		45BE42C421A51F4F0069E7F6 /* QueryKeyboardCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BE42C321A51F4F0069E7F6 /* QueryKeyboardCommand.swift */; };
+		45BE42C621A63B910069E7F6 /* CommandFactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BE42C521A63B910069E7F6 /* CommandFactor.swift */; };
+		45BE42C821A649CF0069E7F6 /* ConnectKeyboardCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BE42C721A649CF0069E7F6 /* ConnectKeyboardCommand.swift */; };
+		45BE42CA21A650040069E7F6 /* ReleaseKeyboardCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BE42C921A650040069E7F6 /* ReleaseKeyboardCommand.swift */; };
+		45BE42CC21A67A400069E7F6 /* EnterTDMCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BE42CB21A67A400069E7F6 /* EnterTDMCommand.swift */; };
+		45BE42CE21ABB84E0069E7F6 /* EnterTDMComboCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BE42CD21ABB84E0069E7F6 /* EnterTDMComboCommand.swift */; };
+		45BE42D221ABCC030069E7F6 /* ChooseKeyboardWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BE42D021ABCC020069E7F6 /* ChooseKeyboardWindow.swift */; };
+		45BE42D321ABCC030069E7F6 /* ChooseKeyboardWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45BE42D121ABCC020069E7F6 /* ChooseKeyboardWindow.xib */; };
+		E5B1696684C4BEB5763556CF /* Pods_simpleTDM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FCB077563E7F040D3DDDEE3 /* Pods_simpleTDM.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		45999C4A21ABFC4D0084DD10 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LoginItems;
+			dstSubfolderSpec = 1;
+			files = (
+				45999C4B21ABFC6B0084DD10 /* LaunchHelper.app in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		001723E6DC833C97B15F6DE5 /* Pods-LaunchHelper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LaunchHelper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LaunchHelper/Pods-LaunchHelper.debug.xcconfig"; sourceTree = "<group>"; };
+		0B70F4791640F1C283157B38 /* Pods_LaunchHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LaunchHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		452DC66021AD4B31003C7592 /* LogWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LogWindow.xib; sourceTree = "<group>"; };
+		452DC66221AD4B71003C7592 /* LogWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogWindow.swift; sourceTree = "<group>"; };
+		452DC67721AE9427003C7592 /* SleepCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepCommand.swift; sourceTree = "<group>"; };
+		452DC67921AE9559003C7592 /* WakeCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WakeCommand.swift; sourceTree = "<group>"; };
+		45999C2E21ABDA560084DD10 /* SettingWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingWindow.xib; sourceTree = "<group>"; };
+		45999C3021ABDD8F0084DD10 /* SettingWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingWindow.swift; sourceTree = "<group>"; };
+		45999C3221ABEC930084DD10 /* launch_agent.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = launch_agent.plist; sourceTree = "<group>"; };
+		45999C3421ABF4470084DD10 /* install_launch_agent.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = install_launch_agent.sh; sourceTree = "<group>"; };
+		45999C3521ABF48D0084DD10 /* uninstall_launch_agent.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = uninstall_launch_agent.sh; sourceTree = "<group>"; };
+		45999C3C21ABFC050084DD10 /* LaunchHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LaunchHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		45999C3E21ABFC050084DD10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		45999C4021ABFC070084DD10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		45999C4321ABFC070084DD10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		45999C4521ABFC070084DD10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45999C4621ABFC070084DD10 /* LaunchHelper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LaunchHelper.entitlements; sourceTree = "<group>"; };
+		45999C4C21ACD1350084DD10 /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
+		45999C5421ACEF050084DD10 /* TDMController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDMController.swift; sourceTree = "<group>"; };
+		45BE42A021A4F5B50069E7F6 /* simpleTDM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = simpleTDM.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		45BE42A321A4F5B50069E7F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		45BE42A521A4F5B60069E7F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		45BE42A821A4F5B60069E7F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		45BE42AA21A4F5B60069E7F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45BE42AB21A4F5B60069E7F6 /* simpleTDM.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = simpleTDM.entitlements; sourceTree = "<group>"; };
+		45BE42B221A4F6AA0069E7F6 /* Communication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Communication.swift; sourceTree = "<group>"; };
+		45BE42B421A4F6AA0069E7F6 /* TDMUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TDMUtilities.swift; sourceTree = "<group>"; };
+		45BE42B521A4F6AA0069E7F6 /* ThunderboltUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThunderboltUtilities.swift; sourceTree = "<group>"; };
+		45BE42B621A4F6AA0069E7F6 /* cocoa_monitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cocoa_monitor.h; sourceTree = "<group>"; };
+		45BE42B721A4F6AA0069E7F6 /* BlueKeyboardUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlueKeyboardUtilities.swift; sourceTree = "<group>"; };
+		45BE42B821A4F6AA0069E7F6 /* NetworkUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkUtilities.swift; sourceTree = "<group>"; };
+		45BE42B921A4F6AA0069E7F6 /* cocoa_monitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cocoa_monitor.m; sourceTree = "<group>"; };
+		45BE42C021A4F6B20069E7F6 /* simpleTDM-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "simpleTDM-Bridging-Header.h"; sourceTree = "<group>"; };
+		45BE42C121A4FEE30069E7F6 /* PreferenceUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceUtilities.swift; sourceTree = "<group>"; };
+		45BE42C321A51F4F0069E7F6 /* QueryKeyboardCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryKeyboardCommand.swift; sourceTree = "<group>"; };
+		45BE42C521A63B910069E7F6 /* CommandFactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandFactor.swift; sourceTree = "<group>"; };
+		45BE42C721A649CF0069E7F6 /* ConnectKeyboardCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectKeyboardCommand.swift; sourceTree = "<group>"; };
+		45BE42C921A650040069E7F6 /* ReleaseKeyboardCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReleaseKeyboardCommand.swift; sourceTree = "<group>"; };
+		45BE42CB21A67A400069E7F6 /* EnterTDMCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterTDMCommand.swift; sourceTree = "<group>"; };
+		45BE42CD21ABB84E0069E7F6 /* EnterTDMComboCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterTDMComboCommand.swift; sourceTree = "<group>"; };
+		45BE42D021ABCC020069E7F6 /* ChooseKeyboardWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseKeyboardWindow.swift; sourceTree = "<group>"; };
+		45BE42D121ABCC020069E7F6 /* ChooseKeyboardWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChooseKeyboardWindow.xib; sourceTree = "<group>"; };
+		4FCB077563E7F040D3DDDEE3 /* Pods_simpleTDM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_simpleTDM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EAD8BF33EEC59F847B5E6AE /* Pods-LaunchHelper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LaunchHelper.release.xcconfig"; path = "Pods/Target Support Files/Pods-LaunchHelper/Pods-LaunchHelper.release.xcconfig"; sourceTree = "<group>"; };
+		83096EAF59E762E4C468998D /* Pods-simpleTDM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-simpleTDM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-simpleTDM/Pods-simpleTDM.debug.xcconfig"; sourceTree = "<group>"; };
+		8E8E5EC63A5B682721CF1F5F /* Pods-simpleTDM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-simpleTDM.release.xcconfig"; path = "Pods/Target Support Files/Pods-simpleTDM/Pods-simpleTDM.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		45999C3921ABFC050084DD10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4371C71E8BE36692C930007D /* Pods_LaunchHelper.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45BE429D21A4F5B50069E7F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45999C4D21ACD1350084DD10 /* ServiceManagement.framework in Frameworks */,
+				E5B1696684C4BEB5763556CF /* Pods_simpleTDM.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		45999C3D21ABFC050084DD10 /* LaunchHelper */ = {
+			isa = PBXGroup;
+			children = (
+				45999C3E21ABFC050084DD10 /* AppDelegate.swift */,
+				45999C4021ABFC070084DD10 /* Assets.xcassets */,
+				45999C4221ABFC070084DD10 /* MainMenu.xib */,
+				45999C4521ABFC070084DD10 /* Info.plist */,
+				45999C4621ABFC070084DD10 /* LaunchHelper.entitlements */,
+			);
+			path = LaunchHelper;
+			sourceTree = "<group>";
+		};
+		45BE429721A4F5B50069E7F6 = {
+			isa = PBXGroup;
+			children = (
+				45BE42A221A4F5B50069E7F6 /* simpleTDM */,
+				45999C3D21ABFC050084DD10 /* LaunchHelper */,
+				45BE42A121A4F5B50069E7F6 /* Products */,
+				D0E642BF83C6054A10B1740D /* Pods */,
+				CB2AB0EB84B662EFED8A64D8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		45BE42A121A4F5B50069E7F6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				45BE42A021A4F5B50069E7F6 /* simpleTDM.app */,
+				45999C3C21ABFC050084DD10 /* LaunchHelper.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		45BE42A221A4F5B50069E7F6 /* simpleTDM */ = {
+			isa = PBXGroup;
+			children = (
+				45BE42CF21ABCC020069E7F6 /* Window */,
+				45BE42B121A4F6AA0069E7F6 /* Communication */,
+				45BE42B321A4F6AA0069E7F6 /* Utilities */,
+				45999C5421ACEF050084DD10 /* TDMController.swift */,
+				45BE42A321A4F5B50069E7F6 /* AppDelegate.swift */,
+				45BE42C021A4F6B20069E7F6 /* simpleTDM-Bridging-Header.h */,
+				45BE42A521A4F5B60069E7F6 /* Assets.xcassets */,
+				45BE42A721A4F5B60069E7F6 /* MainMenu.xib */,
+				45BE42AA21A4F5B60069E7F6 /* Info.plist */,
+				45BE42AB21A4F5B60069E7F6 /* simpleTDM.entitlements */,
+			);
+			path = simpleTDM;
+			sourceTree = "<group>";
+		};
+		45BE42B121A4F6AA0069E7F6 /* Communication */ = {
+			isa = PBXGroup;
+			children = (
+				45BE42B221A4F6AA0069E7F6 /* Communication.swift */,
+				45BE42C521A63B910069E7F6 /* CommandFactor.swift */,
+				45BE42C321A51F4F0069E7F6 /* QueryKeyboardCommand.swift */,
+				45BE42C721A649CF0069E7F6 /* ConnectKeyboardCommand.swift */,
+				45BE42C921A650040069E7F6 /* ReleaseKeyboardCommand.swift */,
+				45BE42CB21A67A400069E7F6 /* EnterTDMCommand.swift */,
+				45BE42CD21ABB84E0069E7F6 /* EnterTDMComboCommand.swift */,
+				452DC67721AE9427003C7592 /* SleepCommand.swift */,
+				452DC67921AE9559003C7592 /* WakeCommand.swift */,
+			);
+			path = Communication;
+			sourceTree = "<group>";
+		};
+		45BE42B321A4F6AA0069E7F6 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				45BE42B421A4F6AA0069E7F6 /* TDMUtilities.swift */,
+				45BE42B521A4F6AA0069E7F6 /* ThunderboltUtilities.swift */,
+				45BE42B621A4F6AA0069E7F6 /* cocoa_monitor.h */,
+				45BE42B921A4F6AA0069E7F6 /* cocoa_monitor.m */,
+				45BE42B721A4F6AA0069E7F6 /* BlueKeyboardUtilities.swift */,
+				45BE42B821A4F6AA0069E7F6 /* NetworkUtilities.swift */,
+				45BE42C121A4FEE30069E7F6 /* PreferenceUtilities.swift */,
+				45999C3221ABEC930084DD10 /* launch_agent.plist */,
+				45999C3421ABF4470084DD10 /* install_launch_agent.sh */,
+				45999C3521ABF48D0084DD10 /* uninstall_launch_agent.sh */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		45BE42CF21ABCC020069E7F6 /* Window */ = {
+			isa = PBXGroup;
+			children = (
+				45BE42D021ABCC020069E7F6 /* ChooseKeyboardWindow.swift */,
+				45BE42D121ABCC020069E7F6 /* ChooseKeyboardWindow.xib */,
+				45999C3021ABDD8F0084DD10 /* SettingWindow.swift */,
+				45999C2E21ABDA560084DD10 /* SettingWindow.xib */,
+				452DC66221AD4B71003C7592 /* LogWindow.swift */,
+				452DC66021AD4B31003C7592 /* LogWindow.xib */,
+			);
+			path = Window;
+			sourceTree = "<group>";
+		};
+		CB2AB0EB84B662EFED8A64D8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				45999C4C21ACD1350084DD10 /* ServiceManagement.framework */,
+				4FCB077563E7F040D3DDDEE3 /* Pods_simpleTDM.framework */,
+				0B70F4791640F1C283157B38 /* Pods_LaunchHelper.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D0E642BF83C6054A10B1740D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				83096EAF59E762E4C468998D /* Pods-simpleTDM.debug.xcconfig */,
+				8E8E5EC63A5B682721CF1F5F /* Pods-simpleTDM.release.xcconfig */,
+				001723E6DC833C97B15F6DE5 /* Pods-LaunchHelper.debug.xcconfig */,
+				6EAD8BF33EEC59F847B5E6AE /* Pods-LaunchHelper.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		45999C3B21ABFC050084DD10 /* LaunchHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45999C4721ABFC070084DD10 /* Build configuration list for PBXNativeTarget "LaunchHelper" */;
+			buildPhases = (
+				5A2BED0F9032A95B01272B13 /* [CP] Check Pods Manifest.lock */,
+				45999C3821ABFC050084DD10 /* Sources */,
+				45999C3921ABFC050084DD10 /* Frameworks */,
+				45999C3A21ABFC050084DD10 /* Resources */,
+				278D982F03F8AF7E0C06ABB8 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LaunchHelper;
+			productName = LaunchHelper;
+			productReference = 45999C3C21ABFC050084DD10 /* LaunchHelper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		45BE429F21A4F5B50069E7F6 /* simpleTDM */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45BE42AE21A4F5B60069E7F6 /* Build configuration list for PBXNativeTarget "simpleTDM" */;
+			buildPhases = (
+				976B37A3198824950AB8A16C /* [CP] Check Pods Manifest.lock */,
+				45BE429C21A4F5B50069E7F6 /* Sources */,
+				45BE429D21A4F5B50069E7F6 /* Frameworks */,
+				45BE429E21A4F5B50069E7F6 /* Resources */,
+				2D6BFE622194006A0716058D /* [CP] Embed Pods Frameworks */,
+				45999C4A21ABFC4D0084DD10 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = simpleTDM;
+			productName = simpleTDM;
+			productReference = 45BE42A021A4F5B50069E7F6 /* simpleTDM.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		45BE429821A4F5B50069E7F6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = LoveC;
+				TargetAttributes = {
+					45999C3B21ABFC050084DD10 = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
+					45BE429F21A4F5B50069E7F6 = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 45BE429B21A4F5B50069E7F6 /* Build configuration list for PBXProject "simpleTDM" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 45BE429721A4F5B50069E7F6;
+			productRefGroup = 45BE42A121A4F5B50069E7F6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				45BE429F21A4F5B50069E7F6 /* simpleTDM */,
+				45999C3B21ABFC050084DD10 /* LaunchHelper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		45999C3A21ABFC050084DD10 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45999C4121ABFC070084DD10 /* Assets.xcassets in Resources */,
+				45999C4421ABFC070084DD10 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45BE429E21A4F5B50069E7F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				452DC66121AD4B31003C7592 /* LogWindow.xib in Resources */,
+				45999C3621ABF6FB0084DD10 /* install_launch_agent.sh in Resources */,
+				45999C3721ABF6FB0084DD10 /* uninstall_launch_agent.sh in Resources */,
+				45999C2F21ABDA560084DD10 /* SettingWindow.xib in Resources */,
+				45BE42A621A4F5B60069E7F6 /* Assets.xcassets in Resources */,
+				45BE42A921A4F5B60069E7F6 /* MainMenu.xib in Resources */,
+				45BE42D321ABCC030069E7F6 /* ChooseKeyboardWindow.xib in Resources */,
+				45999C3321ABEC930084DD10 /* launch_agent.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		278D982F03F8AF7E0C06ABB8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LaunchHelper/Pods-LaunchHelper-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftyBeaver/SwiftyBeaver.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyBeaver.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LaunchHelper/Pods-LaunchHelper-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2D6BFE622194006A0716058D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-simpleTDM/Pods-simpleTDM-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CocoaAsyncSocket/CocoaAsyncSocket.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyBeaver/SwiftyBeaver.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaAsyncSocket.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyBeaver.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-simpleTDM/Pods-simpleTDM-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5A2BED0F9032A95B01272B13 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LaunchHelper-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		976B37A3198824950AB8A16C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-simpleTDM-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		45999C3821ABFC050084DD10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45999C3F21ABFC050084DD10 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45BE429C21A4F5B50069E7F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				452DC66321AD4B71003C7592 /* LogWindow.swift in Sources */,
+				45999C5521ACEF050084DD10 /* TDMController.swift in Sources */,
+				45BE42BC21A4F6AA0069E7F6 /* ThunderboltUtilities.swift in Sources */,
+				45BE42BE21A4F6AA0069E7F6 /* NetworkUtilities.swift in Sources */,
+				452DC67821AE9427003C7592 /* SleepCommand.swift in Sources */,
+				45BE42BF21A4F6AA0069E7F6 /* cocoa_monitor.m in Sources */,
+				45BE42BA21A4F6AA0069E7F6 /* Communication.swift in Sources */,
+				45999C3121ABDD8F0084DD10 /* SettingWindow.swift in Sources */,
+				45BE42C621A63B910069E7F6 /* CommandFactor.swift in Sources */,
+				45BE42CC21A67A400069E7F6 /* EnterTDMCommand.swift in Sources */,
+				45BE42A421A4F5B50069E7F6 /* AppDelegate.swift in Sources */,
+				45BE42BD21A4F6AA0069E7F6 /* BlueKeyboardUtilities.swift in Sources */,
+				45BE42BB21A4F6AA0069E7F6 /* TDMUtilities.swift in Sources */,
+				45BE42CA21A650040069E7F6 /* ReleaseKeyboardCommand.swift in Sources */,
+				45BE42C821A649CF0069E7F6 /* ConnectKeyboardCommand.swift in Sources */,
+				45BE42C421A51F4F0069E7F6 /* QueryKeyboardCommand.swift in Sources */,
+				45BE42C221A4FEE30069E7F6 /* PreferenceUtilities.swift in Sources */,
+				45BE42CE21ABB84E0069E7F6 /* EnterTDMComboCommand.swift in Sources */,
+				45BE42D221ABCC030069E7F6 /* ChooseKeyboardWindow.swift in Sources */,
+				452DC67A21AE9559003C7592 /* WakeCommand.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		45999C4221ABFC070084DD10 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				45999C4321ABFC070084DD10 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		45BE42A721A4F5B60069E7F6 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				45BE42A821A4F5B60069E7F6 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		45999C4821ABFC070084DD10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 001723E6DC833C97B15F6DE5 /* Pods-LaunchHelper.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = WZJV7Q6KU8;
+				INFOPLIST_FILE = LaunchHelper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.LoveC.simpleTDM.LaunchHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		45999C4921ABFC070084DD10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EAD8BF33EEC59F847B5E6AE /* Pods-LaunchHelper.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = WZJV7Q6KU8;
+				INFOPLIST_FILE = LaunchHelper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.LoveC.simpleTDM.LaunchHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		45BE42AC21A4F5B60069E7F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		45BE42AD21A4F5B60069E7F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		45BE42AF21A4F5B60069E7F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83096EAF59E762E4C468998D /* Pods-simpleTDM.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = WZJV7Q6KU8;
+				INFOPLIST_FILE = simpleTDM/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.LoveC.simpleTDM;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "simpleTDM/simpleTDM-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		45BE42B021A4F5B60069E7F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E8E5EC63A5B682721CF1F5F /* Pods-simpleTDM.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = WZJV7Q6KU8;
+				INFOPLIST_FILE = simpleTDM/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.LoveC.simpleTDM;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "simpleTDM/simpleTDM-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		45999C4721ABFC070084DD10 /* Build configuration list for PBXNativeTarget "LaunchHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45999C4821ABFC070084DD10 /* Debug */,
+				45999C4921ABFC070084DD10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		45BE429B21A4F5B50069E7F6 /* Build configuration list for PBXProject "simpleTDM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45BE42AC21A4F5B60069E7F6 /* Debug */,
+				45BE42AD21A4F5B60069E7F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		45BE42AE21A4F5B60069E7F6 /* Build configuration list for PBXNativeTarget "simpleTDM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45BE42AF21A4F5B60069E7F6 /* Debug */,
+				45BE42B021A4F5B60069E7F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 45BE429821A4F5B50069E7F6 /* Project object */;
+}

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14460.31"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="ChooseKeyboardWindowController" customModule="simpleTDM" customModuleProvider="target">
+            <connections>
+                <outlet property="browser" destination="wVp-qv-Jea" id="doA-3t-Lda"/>
+                <outlet property="window" destination="QvC-M9-y7g" id="PZ8-XT-joC"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="Choose Keyboard" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" animationBehavior="default" id="QvC-M9-y7g" userLabel="ChooseKeyboardWindow">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="196" y="240" width="244" height="316"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="777"/>
+            <view key="contentView" wantsLayer="YES" id="EiT-Mj-1SZ">
+                <rect key="frame" x="0.0" y="0.0" width="244" height="316"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <browser verticalHuggingPriority="750" allowsExpansionToolTips="YES" enabled="YES" hasHorizontalScroller="YES" allowsEmptySelection="YES" defaultColumnWidth="100" minColumnWidth="100" maxVisibleColumns="1" titled="YES" separatesColumns="YES" allowsTypeSelect="YES" columnResizingType="auto" translatesAutoresizingMaskIntoConstraints="NO" id="wVp-qv-Jea">
+                        <rect key="frame" x="0.0" y="0.0" width="244" height="338"/>
+                        <connections>
+                            <action trigger="doubleAction" selector="selectedItem:" target="-2" id="sFJ-kV-ke5"/>
+                            <outlet property="delegate" destination="-2" id="gTh-rD-Iwd"/>
+                        </connections>
+                    </browser>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="wVp-qv-Jea" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" id="2Uh-6S-7nx"/>
+                    <constraint firstAttribute="bottom" secondItem="wVp-qv-Jea" secondAttribute="bottom" id="6DP-HH-hD9"/>
+                    <constraint firstAttribute="trailing" secondItem="wVp-qv-Jea" secondAttribute="trailing" id="Nb5-7a-SWD"/>
+                    <constraint firstItem="wVp-qv-Jea" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" id="vVV-Pl-MEZ"/>
+                </constraints>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="-2" id="r5j-mw-Uek"/>
+            </connections>
+            <point key="canvasLocation" x="18" y="141"/>
+        </window>
+    </objects>
+</document>

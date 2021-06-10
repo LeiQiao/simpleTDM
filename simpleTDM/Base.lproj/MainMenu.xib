@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14460.31"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
+            <connections>
+                <outlet property="delegate" destination="Voe-Tx-rLC" id="GzC-gU-4Uq"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
+        <customObject id="pQC-pT-7Xt" userLabel="Controller" customClass="TDMController" customModule="simpleTDM" customModuleProvider="target">
+            <connections>
+                <outlet property="copyIPItem" destination="8pu-vC-yyP" id="lpb-sl-Syt"/>
+                <outlet property="menu" destination="jOk-0r-xwd" id="qlz-1w-YxK"/>
+                <outlet property="sendToItem" destination="lKP-Z6-lnX" id="E3c-8N-jrX"/>
+                <outlet property="sleepItem" destination="GRf-Fs-XHC" id="2Pw-Lj-XeV"/>
+                <outlet property="statusItem" destination="4at-bn-wfu" id="lkn-o9-xgt"/>
+                <outlet property="takeFromItem" destination="tZ6-Ob-ZqG" id="tSL-fQ-OhV"/>
+                <outlet property="wakeItem" destination="OR3-Tn-xoo" id="0pI-2v-p3W"/>
+            </connections>
+        </customObject>
+        <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="simpleTDM" customModuleProvider="target"/>
+        <menu title="NewApplication" systemMenu="apple" autoenablesItems="NO" id="jOk-0r-xwd" userLabel="Main Menu">
+            <items>
+                <menuItem title="connection: Unknown" enabled="NO" id="4at-bn-wfu">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="cds-Al-zmd"/>
+                <menuItem title="Send keyboard to..." id="lKP-Z6-lnX">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="toggleSendKeyboaradWithMenuItem:" target="pQC-pT-7Xt" id="Iwa-l6-9Jo"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Take keyboard from..." id="tZ6-Ob-ZqG">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="toggleTakeKeyboardWithMenuItem:" target="pQC-pT-7Xt" id="Vab-Id-waZ"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Copy remote IP" id="8pu-vC-yyP">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="toggleCopyIPWithMenuItem:" target="pQC-pT-7Xt" id="YAh-cj-wi4"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="rX8-4l-rQq"/>
+                <menuItem title="Turn off remote display" id="GRf-Fs-XHC">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="toggleSleepRemoteScreenWithMenuItem:" target="pQC-pT-7Xt" id="FKd-ug-stg"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Turn on remote display" id="OR3-Tn-xoo">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="toggleWakeRemoteScreenWithMenuItem:" target="pQC-pT-7Xt" id="BE7-UW-oKY"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="dYY-Z2-ti7"/>
+                <menuItem title="Settings..." id="aue-H1-16E">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="toggleSettingWithMenuItem:" target="pQC-pT-7Xt" id="EIt-aK-CKR"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Show logs..." id="GPh-PL-u1e">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="toggleLogWithMenuItem:" target="pQC-pT-7Xt" id="hhp-VH-v9a"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="86d-43-LBU"/>
+                <menuItem title="Quit simpleTDM" id="Sf8-d1-pui">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="terminate:" target="-1" id="2yC-0n-Lsq"/>
+                    </connections>
+                </menuItem>
+            </items>
+            <point key="canvasLocation" x="-216" y="84"/>
+        </menu>
+    </objects>
+</document>
